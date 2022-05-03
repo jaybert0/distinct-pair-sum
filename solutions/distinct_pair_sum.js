@@ -8,10 +8,11 @@ function distinctPairSum(arr, k) {
       pairs[num] === undefined && 
       pairs[nextValue] === undefined) {
         pairs[num] = [num, nextValue];
+        console.log(pairs)
     }
   });
 
-  return Object.values(pairs);
+  // return Object.values(pairs);
 }
 
 if (require.main === module) {
